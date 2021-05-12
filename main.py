@@ -22,6 +22,8 @@ async def on_ready ():
 async def on_message (message: discord.Message):
 	if message.author.id == 511818194424561674:
 		await message.add_reaction("<:notmod:837275584924221470>")
+	elif "not mod" in message.content.lower():
+		await message.add_reaction("<:notmod:837275584924221470>")
 
 
 # Start the bot
