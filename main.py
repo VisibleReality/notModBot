@@ -20,7 +20,9 @@ async def on_ready ():
 # On message received
 @client.event
 async def on_message (message: discord.Message):
-	if message.author.id == 511818194424561674:
+	if message.channel.id == 838697953987395614:
+		return
+	elif message.author.id == 511818194424561674:
 		await message.add_reaction("<:notmod:837275584924221470>")
 	elif "not mod" in message.content.lower():
 		await message.add_reaction("<:notmod:837275584924221470>")
